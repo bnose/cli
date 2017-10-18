@@ -1,2 +1,1 @@
-# cli
-Bottlenose CLI
+# Bottlenose CLI
