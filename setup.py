@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='Bottlenose CLI',
+    name='bnose',
     version='1.0',
     py_modules=['bnose'],
     install_requires=[
