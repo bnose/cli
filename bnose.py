@@ -85,31 +85,31 @@ def login():
 @click.option('--memo', '-m', default='')
 @click.option('--project', '-p', default='')
 def start(memo, project):
-    """Start worklog tracking"""
+    """Start worklog tracking."""
     _request('worklog/start/', **{'memo': memo, 'project__slug': project})
 
 
 @cli.command()
 def pause():
-    """Pause worklog tracking"""
+    """Pause worklog tracking."""
     _request('worklog/pause/')
 
 
 @cli.command()
 def resume():
-    """Resume worklog tracking"""
+    """Resume worklog tracking."""
     _request('worklog/resume/')
 
 
 @cli.command()
 def status():
-    """Status of the current worklog tracking session"""
+    """Status of the current tracking session."""
     _request('worklog/status/')
 
 
 @cli.command()
 def stop():
-    """Stop worklog tracking"""
+    """Stop worklog tracking."""
     _request('worklog/stop/')
 
 
