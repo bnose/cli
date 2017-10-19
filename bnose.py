@@ -83,9 +83,10 @@ def login():
 
 @cli.command()
 @click.option('--memo', '-m', default='')
-def start(memo):
+@click.option('--project', '-p', default='')
+def start(memo, project):
     """Start worklog tracking"""
-    _request('worklog/start/', **{'memo': memo})
+    _request('worklog/start/', **{'memo': memo, 'project__slug': project})
 
 
 @cli.command()
